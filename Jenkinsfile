@@ -9,8 +9,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'jenkinspv1',
-                    url: 'https://github.com/Suprith25/Jenkins-mini-project.git'
+                git branch: 'main',
+                    url: 'https://github.com/Suprith25/Java-mini-project.git'
             }
         }
 
@@ -31,7 +31,7 @@ pipeline {
                         echo "Uploading WAR to JFrog..."
                         WAR_FILE=$(ls sample-app/target/*.war)
                         curl -u $JFROG_USER:$JFROG_PASS -T $WAR_FILE \
-                        "https://trial9krpxa.jfrog.io/artifactory/testrepo-generic-local/${JOB_NAME}-${BUILD_NUMBER}-sample.war"
+                        "https://trialxl53ee.jfrog.io/artifactory/DevOps/${JOB_NAME}-${BUILD_NUMBER}-sample.war"
                     '''
                 }
             }
@@ -64,4 +64,3 @@ pipeline {
         }
     }
 }
-
