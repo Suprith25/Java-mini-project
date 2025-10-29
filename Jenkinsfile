@@ -7,7 +7,7 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
+        stage('Checkout Code source code') {
             steps {
                 git branch: 'jmp3',
                     url: 'https://github.com/Suprith25/Jenkins-mini-project.git'
