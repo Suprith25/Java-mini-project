@@ -4,10 +4,13 @@ pipeline {
     tools {
         jdk 'jdk17'
         maven 'maven3'
+
+}
+
     }
 
     stages {
-        stage('Checkout Code') {
+        stage('upload') {
             steps {
                 git branch: 'jmp3',
                     url: 'https://github.com/Suprith25/Jenkins-mini-project.git'
