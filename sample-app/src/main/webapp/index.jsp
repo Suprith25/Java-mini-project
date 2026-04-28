@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Sample App</title>
+    <title>Sample App<cation/title>
   </head>
   <body>
     <h1>Welcome to Suprith App</h1>
